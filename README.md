@@ -9,7 +9,7 @@ $ sudo apt-get install shebang_1.01-1_amd64.deb
 
 Once it is installed, you should see an output like this:
 
-=============================================================== start ========================================================
+==== start ===================
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -26,7 +26,7 @@ Unpacking shebang (1.01-1) ...
 Processing triggers for menu (2.1.47+b1) ...
 Setting up shebang (1.01-1) ...
 Processing triggers for menu (2.1.47+b1) ...
-================================================================ end ========================================================
+================== end =========
 
 Next,navigate to the area of your projects, say desktop,  create a directory you would like to use for your projects say you want
 to call it "shebang", you will then do this:
@@ -44,19 +44,19 @@ $ Enter project name (shebang ?): #Enter the project folder you wish to create -
 $ Enter application entry point (default 'app.sh'?): #Enter the application name, the default one is 'app.sh' if you don't enter anything#
 The following text will follow if all goes well
 
-============================================================== start =======================================================
-============ wait as we prepare your bang project =================
+================ start ============
+===== wait as we prepare your bang project =========
 Cloning into './my-project/public/shared/img'...
 remote: Counting objects: 37, done.
 remote: Compressing objects: 100% (37/37), done.
 remote: Total 37 (delta 11), reused 0 (delta 0)
 Unpacking objects: 100% (37/37), done.
-========== ... writing application directories ==============================
+===== ... writing application directories ===========
 all set! cd to (your project) and see if it worked
 Ensure all dependencies are installed.
 Run the command *npm run install* for the dependencies.
 Initiate the project by running *npm run rot*
-=============================================================== end ======================================================
+================== end ==============
 As the application says, navigate to the project directory you just created. Install the dependencies by doing the following
 
 $ (sudo) npm install
