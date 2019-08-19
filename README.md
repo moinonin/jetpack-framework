@@ -1,9 +1,9 @@
 # She-bang framework  
-This is a foundational framework combining bash shell and Unix capabilities to create a fast static site generation, as well as a dynamic  
-web application used to fetch data from API endpoints with no delays. The application combines the power of heredocuments and the versality  
+This is a foundational framework combining bash shell and Unix capabilities to create a fast static site generation, as well as a dynamic
+web application used to fetch data from API endpoints with no delays. The application combines the power of heredocuments and the versality
 of regular expressions in bash shell to create script templates for you to start out with.  
 ## Requirements  
-She-bang framework is currently available only for 64 bit linux users. Depending on the interest, the team behind it will soon role out other versions.  
+She-bang framework is currently available only for 64 bit linux users. Depending on the interest, the team behind it will soon role out other versions. 
 In addition, the package uses node package management, and thus you need nodejs installed (and thererefore npm).  
 ## Installation
 Upon clonning the application from the repository, navigate to the source directory and install it by running the following commands:
