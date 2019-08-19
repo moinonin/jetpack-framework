@@ -7,9 +7,9 @@ She-bang framework is currently available only for 64 bit linux users. Depending
 In addition, the package uses node package management, and thus you need nodejs installed (and thererefore npm).  
 ## Installation
 Upon clonning the application from the repository, navigate to the source directory and install it by running the following commands:
-
+```
 $ sudo apt-get install shebang_1.01-1_amd64.deb
-
+```
 Once it is installed, you should see an output like this:
 
 ==== start ===================  
@@ -31,22 +31,29 @@ Setting up shebang (1.01-1) ...
 Processing triggers for menu (2.1.47+b1) ...
 ================== end =========  
 ## She-bang Usage  
-Navigate to the area of your projects, say desktop,  create a directory you would like to use for your projects say you want
-to call it "shebang", you will then do this:
-
+Navigate to the area of your projects, say desktop,  create a directory you would like to use for your projects say you want to call it "shebang", you will then do this:
+```
 $ mkdir shebang
+```
+Change directory to the project as follows:
+
+```
 $ cd shebang
-
+```
 Open your favorite teminal application and run the following command:
-
+```
 $ shebang
-
+```
 The project dialog will begin immediately, and you will just need to follow the directions on our dedicated command line interface (CLI)
 
-$ Enter project name (shebang ?): #Enter the project folder you wish to create - (if you are lazy press enter with no input) the default is the preceeding directory#
-$ Enter application entry point (default 'app.sh'?): #Enter the application name, the default one is 'app.sh' if you don't enter anything#
-The following text will follow if all goes well.  
-================ start ============  
+```
+$ Enter project name (shebang ?): 
+```
+Enter the project folder you wish to create - (if you are lazy press enter with no input) the default is the preceeding directory, then:
+```
+$ Enter application entry point (default 'app.sh'?): 
+```
+Enter the application name, the default one is 'app.sh' if you don't enter anything. The following text will follow if all goes well.  
 ===== wait as we prepare your bang project =========  
 Cloning into './my-project/public/shared/img'...  
 remote: Counting objects: 37, done.  
@@ -58,19 +65,18 @@ all set! cd to (your project) and see if it worked
 Ensure all dependencies are installed.  
 Run the command *npm run install* for the dependencies.  
 Initiate the project by running *npm run rot*  
-================== end ==============  
+
 As the application says, navigate to the project directory you just created. Install the dependencies by doing the following:  
-$ (sudo) npm install  
-.  
-.  
-.  
-.  
-done  
-$ npm run rot #This is the magic command, it creates the routes, template scripts, and even create our own first page to direct you to
-our documentation and guides#
-$ npm run dev #This is your usual command used to trigger the server. By default, She-Bang uses port 8080#
+```
+$ sudo npm install  
+``` 
+```
+$ npm run rot 
+```
 
-*/ After this you are ready to carry on the development. Familiarize yourself with the project directories created and where necessary 
-consult our guide /*
-
+This is the magic command, it creates the routes, template scripts, and even create our own first page to direct you to our documentation and guides. 
+```
+$ npm run dev 
+```
+This is your usual command used to trigger the server. By default, She-Bang uses port 8080. After this you are ready to carry on the development. Familiarize yourself with the project directories created and where necessary consult our guide. 
 
