@@ -12,7 +12,7 @@ Upon clonning the application from our [github repository](https://github.com/mo
 ```
 $ sudo apt-get install ./shebang_1.01-1_amd64.deb
 ```
-Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:
+Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:  
 ==== start ===================  
 Reading package lists... Done
 Building dependency tree       
@@ -29,7 +29,7 @@ Preparing to unpack .../shebang_1.01-1_amd64.deb ...
 Unpacking shebang (1.01-1) ...
 Processing triggers for menu (2.1.47+b1) ...
 Setting up shebang (1.01-1) ...
-Processing triggers for menu (2.1.47+b1) ...
+Processing triggers for menu (2.1.47+b1) ...  
 ================== end =========  
 ## __She-bang Usage__  
 Navigate to the area of your projects, say desktop,  create a directory you would like to use for your projects say you want to call it "my-project", you will then do this:
@@ -52,7 +52,7 @@ Enter the project folder you wish to create - (if you are lazy like me, press en
 ```
 $ Enter application entry point (default 'app.sh'?): 
 ```
-Enter the application name, the default one is "app.sh" if you don't enter anything. However, I choose to call my main application script "index.sh", the following text will follow if all goes well.
+Enter the application name, the default one is "app.sh" if you don't enter anything. However, I choose to call my main application script "index.sh", the following text will follow if all goes well.  
 #=================== start ====================================# 
 ===== wait as we prepare your bang project =========  
 Cloning into './my-website/public/shared/img'...  
@@ -64,8 +64,8 @@ Unpacking objects: 100% (37/37), done.
 all set! cd to (my-website) and see if it worked  
 Ensure all dependencies are installed.  
 Run the command *npm run install* for the dependencies.  
-Initiate the project by running *npm run rot*. 
-#===================end ======================================#
+Initiate the project by running *npm run rot*.  
+#===================end ======================================#  
 Do as the application says: navigate to the project directory you just created. Install the dependencies by doing the following:  
 ``` 
 $ cd my-website 
@@ -89,7 +89,7 @@ This is your usual command used to trigger the localhost server. By default, She
 ```
 $ npm install -g http-server
 ```
-You should see the following output. 
+You should see the following output.  
 #=================== start ====================================#  
 > she-bang@1.0.0 dev /home/rotich/Desktop/shebang/my-website
 > npm run serve & npm run app
@@ -106,8 +106,8 @@ Starting up http-server, serving ./public
 Available on:
   http://127.0.0.1:8080
   http://192.168.1.101:8080
-Hit CTRL-C to stop the server
-#===================end ======================================#
+Hit CTRL-C to stop the server  
+#===================end ======================================#  
 Navigate to your favorite browser and type:
 ```
 http://localhost:8080
