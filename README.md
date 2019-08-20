@@ -2,17 +2,17 @@
 ## __Why She-Bang?__
 She-Bang is a foundational framework leveraging all bash shell and Unix capabilities to give you a state-of-the-art static site generator, and API endpoint fetcher. Here we are referring to portability of bash, richness in regular expression (regex) libraries, accessibility to the filing systems, and the light-weightness of bash shell. The application uses heredocuments to create script templates for you to start out with. All these enables She-Bang to come up with two main purposes that most modern developers are intrigued about:
 ### __Static Site Generation__  
-Sometimes you just want to create a site with no serverside embedded data. For instance documentation website, landing pages, portoflios, and what have you. These are the kind of tasks that shouldn't waste any of your money, as we know time = money :). She-Bang will harness its magic to create a site for you, literally within seconds.  
+Sometimes you just want to create a site with no serverside embedded data. For instance documentation website, landing pages, portoflios, and what have you. These are the kind of tasks that shouldn't waste any of your money, as we know time = money :) She-Bang will harness its magic to create a site for you, literally within seconds.  
 ### __API data fetcher__
 The second utility She-Bang comes with is the ability to fetch data from API endpoints. Our tool comes with a DEMO page named "apifetch-demo", which enables getting of data from any API url, or locally available *.json file. It's real-time capability is enable by an infinite loop that is used to read the information from the server, write them to an html file, and discard after a set loop (sleep) time. Upon expiry of the sleep time, the file is deleted and a fresh one is created with newer information. Users should be aware of the rate at which information is fetched from the server, set sleep time with a variable "delay" under the scripts directory 1-5 seconds was used for the trials and worked best for that specific API endpoint provided by the European Central Bank (ECB). In you case however, check with the server administrator to agree on the delay time. This is IMPORTANT! as when delay is set too short, the application will force the server to throttle the rate in which data is distributed to your local machine.
 ## __Requirements__  
 She-bang framework is currently available only for 64 bit linux users. Depending on the interest, the team behind it will soon role out other versions. In addition, the package uses node package management, and thus you need nodejs installed (and thererefore npm).  
 ## __Installation__
-Upon clonning the application from our [github repository](https://github.com/moinonin/shebang-framework) and open your favorite terminal application, navigate to the source directory (where it is downloaded to) and install it by running the following commands:
+Upon clonning the application from our [github repository](https://github.com/moinonin/shebang-framework), open your favorite terminal application, navigate to the source directory (where it is downloaded to) and install it by running the following commands:
 ```
 $ sudo apt-get install ./shebang_1.01-1_amd64.deb
 ```
-Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:  
+Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:
 ==== start ===================  
 Reading package lists... Done
 Building dependency tree       
@@ -29,7 +29,7 @@ Preparing to unpack .../shebang_1.01-1_amd64.deb ...
 Unpacking shebang (1.01-1) ...
 Processing triggers for menu (2.1.47+b1) ...
 Setting up shebang (1.01-1) ...
-Processing triggers for menu (2.1.47+b1) ...  
+Processing triggers for menu (2.1.47+b1) ...
 ================== end =========  
 ## __She-bang Usage__  
 Navigate to the area of your projects, say desktop,  create a directory you would like to use for your projects say you want to call it "my-project", you will then do this:
@@ -52,8 +52,8 @@ Enter the project folder you wish to create - (if you are lazy like me, press en
 ```
 $ Enter application entry point (default 'app.sh'?): 
 ```
-Enter the application name, the default one is "app.sh" if you don't enter anything. However, I choose to call my main application script "index.sh", the following text will follow if all goes well.  
-#=================== start ====================================#  
+Enter the application name, the default one is "app.sh" if you don't enter anything. However, I choose to call my main application script "index.sh", the following text will follow if all goes well.
+#=================== start ====================================# 
 ===== wait as we prepare your bang project =========  
 Cloning into './my-website/public/shared/img'...  
 remote: Counting objects: 37, done.  
@@ -64,12 +64,13 @@ Unpacking objects: 100% (37/37), done.
 all set! cd to (my-website) and see if it worked  
 Ensure all dependencies are installed.  
 Run the command *npm run install* for the dependencies.  
-Initiate the project by running *npm run rot*.  
-#===================end ======================================#  
-Do as the application says: navigate to the project directory you just created. Install the dependencies by doing the following:
+Initiate the project by running *npm run rot*. 
+#===================end ======================================#
+Do as the application says: navigate to the project directory you just created. Install the dependencies by doing the following:  
+``` 
+$ cd my-website 
 ```
-$ cd my-website
-```
+
 ```
 $ sudo npm install  
 ``` 
@@ -88,13 +89,15 @@ This is your usual command used to trigger the localhost server. By default, She
 ```
 $ npm install -g http-server
 ```
-You should see the following output.  
+You should see the following output. 
 #=================== start ====================================#  
 > she-bang@1.0.0 dev /home/rotich/Desktop/shebang/my-website
 > npm run serve & npm run app
 
+
 > she-bang@1.0.0 serve /home/rotich/Desktop/shebang/my-website
 > http-server
+
 
 > she-bang@1.0.0 app /home/rotich/Desktop/shebang/my-website
 > ./index.sh
@@ -103,13 +106,18 @@ Starting up http-server, serving ./public
 Available on:
   http://127.0.0.1:8080
   http://192.168.1.101:8080
-Hit CTRL-C to stop the server  
-#===================end ======================================#  
+Hit CTRL-C to stop the server
+#===================end ======================================#
 Navigate to your favorite browser and type:
-``` http://localhost:8080 ```
+```
+http://localhost:8080
+```
 or:
-``` http://127.0.0.1:8080 ```
-After this you are ready to carry on the development. You should see She-Bang home page below: ![](http://imgur.com/XFaIAc4l.png)
+```
+http://127.0.0.1:8080
+```
+After this you are ready to carry on the development. You should see She-Bang home page below:
+![](http://imgur.com/XFaIAc4l.png)
 Familiarize yourself with the project directories created and where necessary consult this guide.
 ## __She-Bang files & directories__
 In the next sections we will explain more about the files and directories She-Bang needs in order to run flawlessly. There are a total of seven directories (including the top one hosting the website -- named here "my-project"), and 18 files created by She-Bang. See the following file and directories tree:
@@ -157,7 +165,18 @@ This is the main application file that creates the API DEMO fetch, it is basical
 #### __package.json__
 Is the node package management file containing all the project details, scripts, dependencies, etc. You can read more on this under the node package management official site. 
 #### __global.sh__ 
-This is a file that stores global variables that can be called in any file when required. In this case for instance, one such variable was "APIPath", which as you might have guessed, represents the url in which the API is hosted. The second variable was the "delay", which is time set in seconds at which the application should read the server. This is important as if many hits are sent to the server, it will sense possible hacking, and will immediately throttle the data streaming behavior. It is therefore IMPORTANT! to set the time delay appropriately. If necessary, contact the server administrator.
+This is a file that stores global variables that can be called in any file when required. In this case for instance, one such variable was "APIPath", which as you might have guessed, represents the url in which the API is hosted. The second variable was the "delay", which is time set in seconds at which the application should read the server. This is important as if many hits are sent to the server, it will sense possible hacking, and will immediately throttle the data streaming behavior. It is therefore IMPORTANT! to set the time delay appropriately. If necessary, contact the server administrator.  
+## __Customizing the application__
+Now that we have learned how to install the application and examined the contents of each directory as well as their uses, we would naturally want to tweak these templates and variables in order to use them for our new site. You will thus start by heading to [bootstrap](https://getbootstrap.com), [bulma](https://bulma.io) or any styling content delivery network (CDN) of your choice, and get your templates. Replace the scripts headtags, and footer (including the social buttons and copyright), nav script will be generated automatically thanks to the power of She-Bang. You will notice that the above scripts are re-written into variables that will be rendered in the home and other subsequent routes. It is therefore important to ensure that you know what you are doing, otherwise you will have to start over and over -- which is not a bad idea if you want to learn to be profficient in this software.  
+
+Now, head to scripts folder where you will meet home, navgen, and gen shell scripts. As you might have guessed, home script generates the home page, aka index.html. The list items of navigation bar are created by navgen, while gen shell script creates all the other routes. Once you have modified all the scripts right, you are now ready to generate your site by running the following commands subsequently:  
+```
+$ npm run rot # to generate the routes based on the navgen script
+```
+```
+$ npm run dev # to spin the development server
+```
+A continuous iteration of these steps will definitely result in a great website for your portfolio, landing page, or documentation. You will also gain cutting-edge skills utilizing this software and hopefully be one of the best consultants out there. 
 ## __Conclusion__
 If you have read this guide upto this point, you should be ready to hit the road with She-Bang static site generator and API fetcher. It is my sincere hope that you will find as much joy in utilizing this tool, as I did writing its code.
 
