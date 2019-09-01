@@ -10,7 +10,7 @@ Sometimes you just want to create a site with no serverside embedded data. For i
 The second utility She-Bang comes with is the ability to fetch data from API endpoints. Our tool comes with a DEMO page named "apifetch-demo", which enables getting of data from any API url, or locally available *.json file. It's real-time capability is enabled by an infinite loop that is used to read the information from the server, write them to an html file, and discard after a set loop (sleep) time. Upon expiry of the sleep time, the file is deleted and a fresh one is created with newer information. Users should be aware of the rate at which information is fetched from the server, set sleep time with a variable "delay" under the scripts directory 1-5 seconds was used for the trials and worked best for that specific API endpoint provided by the European Central Bank (ECB). In your case, however, check with the server administrator to agree on the delay time. This is IMPORTANT! as when the delay is set too short, the application will force the server to throttle the rate in which data is distributed to your local machine.
 ## Requirements
 She-bang framework is currently available only for 64 bit linux (all distros) and Windows 64-bit users. Depending on the interest, the team behind it will soon roll out MacOs versions. Besides, the package uses node package management, and thus you need nodejs installed (and therefore npm).
-## Downloads  
+## Downloads and Installations  
 
 ### Windows 64-bit Users:  
 #### Installation  
