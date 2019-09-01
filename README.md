@@ -13,12 +13,13 @@ She-bang framework is currently available only for 64 bit linux (all distros) an
 ## Downloads  
 
 ### Windows 64-bit Users:  
+#### Installation  
 [Windows 64-bit](https://github.com/moinonin/shebang-framework/raw/master/shebang_1.01-1_win64.zip)  
 For windows users, she-bang can be cloned or downloaded directly from [github repository](https://github.com/moinonin/shebang-framework). The rest of the installation follows extracting the zip file to your preferred location, opening the content folders, and double-clicking the executable file. That will install the program for everyday use. You may optionally create a desktop shortcut just as you do with many of your applications.  
 
 ### Linux X86-64 Users:
 [Linux X86-64](https://github.com/moinonin/shebang-framework/raw/master/shebang_1.01-1_amd64.deb)
-## Installation
+#### Installation
 Upon cloning or downloading the application from our [github repository](https://github.com/moinonin/shebang-framework), open your favorite terminal application, navigate to the source directory (where it is downloaded to) and install it by running the following commands:
 ```
 $ sudo apt-get install ./shebang_1.01-1_amd64.deb
