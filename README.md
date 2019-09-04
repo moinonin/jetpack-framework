@@ -22,9 +22,9 @@ For windows users, she-bang can be cloned or downloaded directly from [github re
 #### Installation
 Upon cloning or downloading the application from our [github repository](https://github.com/moinonin/shebang-framework), open your favorite terminal application, navigate to the source directory (where it is downloaded to) and install it by running the following commands:
 ```
-$ sudo apt-get install ./shebang_1.01-1_amd64.deb
+$ sudo apt-get install ./shebang_<version>_amd64.deb
 ```
-Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:  
+Replacing <version> with your downloaded version. Don't worry about the location of installed files, it is automatically set to go to usr/bin where all other applications are installed. While installing and once it is installed, you should see an output like this:  
 ================== start =========>  
 Reading package lists... Done  
 Building dependency tree  
@@ -132,31 +132,37 @@ Familiarize yourself with the project directories created and where necessary co
 ## Understanding files & directories
 In the next sections, we will explain more about the files and directories She-Bang needs in order to run flawlessly. There are a total of seven directories (including the top one hosting the website -- named here "my-project"), and 18 files created by She-Bang. See the following file and directories tree:
 ```
+.
 ├── index.sh
 ├── package.json
 ├── public
-│ ├── apifetch-demo.html
-│ ├── brown-fox.html
-│ ├── index.html
-│ ├── quick.html
-│ └── shared
-│ ├── bootstrap.css
-│ ├── img
-│ │ ├── inzpiro.png
-│ │ └── logo.png
-│ ├── index.css
-│ └── main.css
+│   ├── api-fetch.html
+│   ├── brown-fox.html
+│   ├── index.html
+│   ├── quick.html
+│   └── shared
+│       ├── bootstrap.css
+│       ├── img
+│       │   ├── guide.pdf
+│       │   ├── inzpiro.png
+│       │   └── logo.png
+│       ├── index.css
+│       └── main.css
+├── README.md
 ├── scripts
-│ ├── gen.sh
-│ ├── home.sh
-│ └── navgen.sh
+│   ├── apigen.sh
+│   ├── gen.sh
+│   ├── home.sh
+│   └── navgen.sh
 ├── templates
-│ ├── footer.sh
-│ ├── headtags.sh
-│ └── nav.sh
+│   ├── footer.sh
+│   ├── headtags.sh
+│   └── nav.sh
 └── variables
-└── global.sh
-6 directories, 18 files
+    └── global.sh
+
+6 directories, 21 files
+
 ```
 ## Directories
 ### public
@@ -181,11 +187,8 @@ Now that we have learned how to install the application and examined the content
 
 Now, head to scripts folder where you will meet home, navgen, and gen shell scripts. As you might have guessed, the home script generates the home page, aka index.html. The list items of the navigation bar are created by navgen, while gen shell script creates all the other routes. Once you have modified all the scripts right, you are now ready to generate your site by running the following commands subsequently:
 ```
-$ npm run rot # to generate the routes based on the navgen script
-```
-```
-$ npm run dev # to spin the development server
-```
+$ npm run dev # to generate the routes based on the navgen script and spin the development server with one command
+```  
 A continuous iteration of these steps will definitely result in a great website for your portfolio, landing page, or documentation. You will also gain cutting-edge skills utilizing this software and hopefully be one of the best consultants out there.
 ## Conclusion
 If you have read this guide up to this point, you should be ready to hit the road with She-Bang static site generator and API fetcher. It is my sincere hope that you will find as much joy in utilizing this tool, as I did writing its code.
