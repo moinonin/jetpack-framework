@@ -12,7 +12,7 @@ The second utility She-Bang comes with is the ability to fetch data from API end
 She-bang framework is currently available only for 64 bit linux (all distros) and Windows 64-bit users. Depending on the interest, the team behind it will soon roll out MacOs versions. Besides, the package uses node package management, and thus you need nodejs installed (and therefore npm).
 ## Downloads and Installations  
 
-### Windows 64-bit Users:  
+### Windows 64-bit Users (unstable version):  
 #### Installation  
 [Windows 64-bit](https://github.com/moinonin/shebang-framework/raw/master/shebang_1.01-1_win64.zip)  
 For windows users, she-bang can be cloned or downloaded directly from [github repository](https://github.com/moinonin/shebang-framework). The rest of the installation follows extracting the zip file to your preferred location, opening the content folders, and double-clicking the executable file. That will install the program for everyday use. You may optionally create a desktop shortcut just as you do with many of your applications.  
