@@ -1,4 +1,4 @@
-# ![](http://imgur.com/kqwYh3Pl.png) __GETTING STARTED__ ![](http://imgur.com/rRGC6N8l.png)  
+# ![Imgur](https://i.imgur.com/ZNqJhhD.png) __GETTING STARTED__ ![](http://imgur.com/rRGC6N8l.png)  
 
 # Getting Started
 
