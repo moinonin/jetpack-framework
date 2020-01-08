@@ -127,7 +127,7 @@ or:
 http://127.0.0.1:8080
 ```
 After this, you are ready to carry on the development. You should see JetPack home page below:
-![](http://imgur.com/XFaIAc4l.png)
+![](http://euex.surge.sh/)
 Familiarize yourself with the project directories created and where necessary consult this guide.
 ## Understanding files & directories
 In the next sections, we will explain more about the files and directories JetPack needs in order to run flawlessly. There are a total of seven directories (including the top one hosting the website -- named here "my-project"), and 18 files created by JetPack. See the following file and directories tree:
