@@ -88,15 +88,15 @@ $ cd my-website
 $ sudo npm install
 ```
 ```
-$ npm run rot
+$ npm run dev
 ```
 This is the magic command, it creates the routes, template scripts, and even create our own first page (index.html) to direct you to our documentation and guides. On running above command, you will be prompted to enter navigation bar items:
 ```
 $ Enter navbar items (#word.html separated by spaces):
 ```
-For the purposes of this example, to create two routes, I will enter "quick brown-fox.html". Note, you can choose to add file extensions to the words or live them the way they are as you can see, I left "quick" without extension, but added .html to "brown-fox". The next step is to spin the development server by running:
+For the purposes of this example, to create two routes, I will enter "quick brown-fox.html". Note, you can choose to add file extensions to the words or live them the way they are as you can see, I left "quick" without extension, but added .html to "brown-fox". The next step is to navigate to the local server on your browser:
 ```
-$ npm run dev
+http://127.0.0.1:8080/
 ```
 This is your usual command used to trigger the localhost server. By default, JetPack uses port 8080. If you get a server error, make sure to install "http-server" by typing.
 ```
