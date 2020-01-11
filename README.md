@@ -76,7 +76,7 @@ Unpacking objects: 100% (37/37), done.
 ===== ... writing application directories ===========  
 all set! cd to (my-website) and see if it worked  
 Ensure all dependencies are installed.  
-Run the command *npm run install* for the dependencies.  
+Run the command *npm install* for the dependencies.  
 Initiate the project by running *npm run rot*.  
 #===================end ======================================#  
 Do as the application says: navigate to the project directory you just created. Install the dependencies by doing the following:
